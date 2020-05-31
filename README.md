@@ -1,2 +1,1 @@
-# vhuynh.github.io
-Data Analysis &amp; Visualization Portfolio
+# Data Analysis &amp; Visualization Portfolio
