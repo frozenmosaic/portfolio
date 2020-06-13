@@ -1,0 +1,201 @@
+{
+  "bytes": 78965,
+  "datahub": {
+    "created": "2017-11-09T01:06:00.622796",
+    "findability": "published",
+    "flowid": "core/s-and-p-500-companies/12",
+    "modified": "2018-08-03T07:37:43.123441",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "15ccf9d47f45039459448bd4c6b4ea06",
+  "id": "core/s-and-p-500-companies",
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "name": "s-and-p-500-companies",
+  "related": [
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/s-and-p-500",
+      "publisher": "core",
+      "title": "S&P 500 Index Data"
+    },
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/s-and-p-500-companies-financials",
+      "publisher": "core",
+      "title": "S&P 500 Companies with Financial Information"
+    },
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/finance-vix",
+      "publisher": "core",
+      "title": "VIX - CBOE Volatility Index"
+    },
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/nyse-other-listings",
+      "publisher": "core",
+      "title": "NYSE and Other Listings"
+    }
+  ],
+  "resources": [
+    {
+      "bytes": 18656,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/b8d80d0c578007c9e0d199a6cd2625f1.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "constituents_original",
+      "path": "archive/constituents.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Sector",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "bytes": 448,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpdvoq09gy/core/s-and-p-500-companies/validation_report/data/0c73f53af5c3f1a3b3fa160de9d25d93/validation_report.json",
+      "format": "json",
+      "hash": "0c73f53af5c3f1a3b3fa160de9d25d93",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 19162,
+      "datahub": {
+        "derivedFrom": [
+          "constituents"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpdvoq09gy/core/s-and-p-500-companies/constituents_csv/data/b8d80d0c578007c9e0d199a6cd2625f1/constituents_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "b8d80d0c578007c9e0d199a6cd2625f1",
+      "mediatype": "text/csv",
+      "name": "constituents_csv",
+      "path": "data/constituents_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 505,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Sector",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 37800,
+      "datahub": {
+        "derivedFrom": [
+          "constituents"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmpdvoq09gy/core/s-and-p-500-companies/constituents_json/data/64dd3e9582b936b0352fdd826ecd3c95/constituents_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "64dd3e9582b936b0352fdd826ecd3c95",
+      "mediatype": "text/csv",
+      "name": "constituents_json",
+      "path": "data/constituents_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 505,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Sector",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 2899,
+      "dpp:streamedFrom": "/tmp/tmp0rv5ksk2/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "title": "S&P 500 Companies with Financial Information",
+  "version": "1.0"
+}
