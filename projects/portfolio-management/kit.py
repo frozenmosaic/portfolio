@@ -10,7 +10,7 @@ def get_csv(filename, skiprows=0):
 
 def rets_fr_prices(prices):    
     """
-    computes returns based on prices
+    computes monthly returns based on prices
     returns: DataFrame
     """
     return prices.pct_change().round(3)
