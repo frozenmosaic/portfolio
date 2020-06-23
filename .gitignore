@@ -1,5 +1,6 @@
 projects/portfolio-management/data/positions.csv
 projects/portfolio-management/investment-core.ipynb
+projects/portfolio-management/test.py
 .env
-projects/portfolio-management/.env
+
 .DS_Store
