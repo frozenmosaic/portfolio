@@ -175,12 +175,12 @@ def castFloat(df, col):
     return df
 
 
-tkFid = ["AAL", "AAPL", "BAC", "BND", "DAL", "GS", "INTC", "UNH", "VOO", "XAR", "XOM"]
-dfFid, pfFid = buildPf(tkFid)
-stats(pfFid)
+# tkFid = ["AAL", "AAPL", "BAC", "BND", "DAL", "GS", "INTC", "UNH", "VOO", "XAR", "XOM"]
+# dfFid, pfFid = buildPf(tkFid)
+# stats(pfFid)
 
 tk5 = [
-    "VTSAX",
+    "SPY",
     "XAR",
     "BND",
     "VTV",
