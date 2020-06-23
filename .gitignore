@@ -1,7 +1,8 @@
-projects/portfolio-management/data/positions.csv
-projects/portfolio-management/investment-core.ipynb
-projects/portfolio-management/test.py
-projects/portfolio-management/test.p.db
+projects/portfolio_management/data/positions.csv
+projects/portfolio_management/investment_core.ipynb
+projects/portfolio_management/test.py
+projects/portfolio_management/test.p.db
+projects/machine_learning/data/
 .env
 
 .DS_Store
