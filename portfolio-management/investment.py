@@ -1,16 +1,16 @@
-import csv
 import shelve
 import re
 import string
 import time
+import os
 from datetime import date, datetime, timedelta
 from io import StringIO
 
-import finquant
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import requests
+import finquant
 from finquant.portfolio import build_portfolio
 
 
@@ -19,7 +19,7 @@ class YFinanceCrawler:
     crumb_link = "https://finance.yahoo.com/quote/{0}/history?p={0}"
     crumble_regex = r'CrumbStore":{"crumb":"(.*?)"}'
     quote_link = "https://query1.finance.yahoo.com/v7/finance/download/{quote}?period1={dfrom}&period2={dto}&interval=1mo&events=history&crumb={crumb}"
-    fpath = "data/master.p"
+    fpath = os.path.join('portfolio-page', 'projects', 'portfolio-management', 'data', 'test.p')
 
     def __init__(self, tickers, years_back=10):
         self.tickers = tickers
