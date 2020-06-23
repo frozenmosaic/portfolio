@@ -19,7 +19,7 @@ class YFinanceCrawler:
     crumb_link = "https://finance.yahoo.com/quote/{0}/history?p={0}"
     crumble_regex = r'CrumbStore":{"crumb":"(.*?)"}'
     quote_link = "https://query1.finance.yahoo.com/v7/finance/download/{quote}?period1={dfrom}&period2={dto}&interval=1mo&events=history&crumb={crumb}"
-    fpath = "master.p"
+    fpath = "data/master.p"
 
     def __init__(self, tickers, years_back=10):
         self.tickers = tickers
