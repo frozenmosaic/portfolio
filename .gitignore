@@ -1,9 +1,3 @@
-portfolio_management/data/positions.csv
-portfolio_management/investment_core.ipynb
-portfolio_management/test.py
-portfolio_management/test.p.db
-machine_learning/data/
-.env
-web_apps/dashboard
+
 
 .DS_Store
