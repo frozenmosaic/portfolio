@@ -4,5 +4,6 @@ projects/portfolio_management/test.py
 projects/portfolio_management/test.p.db
 projects/machine_learning/data/
 .env
+projects/web_apps/dashboard
 
 .DS_Store
